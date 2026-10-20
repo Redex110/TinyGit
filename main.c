@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+#define WIDTH 60
 
 //printLine Function to print boader using "-"
 void printLine(int width)
@@ -23,11 +24,11 @@ int main()
 //Function printIntroduction()
 void printIntroduction()
 {
-    printLine(60);
+    printLine(WIDTH);
 
     printf("TinyGit\n");
 
-    printLine(60);
+    printLine(WIDTH);
 
    // printf("User Manual :\n\n");
     printf("TinyGit Initialization    : tinygit init\n");
@@ -37,5 +38,5 @@ void printIntroduction()
     printf("Show staged/modified file : tinygit status\n");
 
 
-    printLine(60);
+    printLine(WIDTH);
 }
