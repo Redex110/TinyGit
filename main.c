@@ -7,14 +7,35 @@ void printLine(int width)
     for(int i = 0; i < width; i++)
         printf("-");
     printf("\n");
-}   
+}
 
+//Function prototype for printIntroduction()
+void printIntroduction();
 
 int main()
 {
-    printLine(40);
-    printf("TinyGit\n");
-    printLine(40);
+    printIntroduction();
 
     return 0;
+}
+
+
+//Function printIntroduction()
+void printIntroduction()
+{
+    printLine(60);
+
+    printf("TinyGit\n");
+
+    printLine(60);
+
+   // printf("User Manual :\n\n");
+    printf("TinyGit Initialization    : tinygit init\n");
+    printf("Add Files for Commit      : tinygit add <path>\n");
+    printf("Create new Commits        : tinygit commit -m <message>\n");
+    printf("See logs for changes      : tinygit log\n");
+    printf("Show staged/modified file : tinygit status\n");
+
+
+    printLine(60);
 }
