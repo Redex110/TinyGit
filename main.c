@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 #define WIDTH 60
 
@@ -13,11 +14,17 @@ void printLine(int width)
 //Function prototype for printIntroduction()
 void printIntroduction();
 
-int main()
+int main(int argc, char *argv[])
 {
-    printIntroduction();
+  //Use of Command Line Argument 
+  for(int i = 0; i < argc; i++)
+  {
+    //print every command-line-argument
+    printf("Argument [%d] : %s\n", i, argv[i]);
 
-    return 0;
+  }
+
+  return 0;
 }
 
 
